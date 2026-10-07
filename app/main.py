@@ -4,13 +4,13 @@ from fastapi import FastAPI
 app = FastAPI()  # creating of FastAPI application, the variable app will represent the web application
 
 @app.get("/")
-def home();
-    return {"message": "Devops Status App is running" }
+def home():
+    return {"message": "DevOps Status App is running" }
 
 @app.get("/health")
-def health();
-    return {"status": "Healthy" }
+def health():
+    return {"status": "healthy" }
 
 @app.get("/version")
-def version();
+def version():
     return {"version": "1.0.0"}
